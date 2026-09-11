@@ -1,0 +1,44 @@
+# AI Study Assistant - Frontend
+
+A React + TypeScript frontend for the [AI Study Assistant](https://github.com/abdallasaidbigpartner-web/ai-study-assistant) backend - completing the full-stack picture: React client, FastAPI backend, PostgreSQL database, JWT authentication, and RAG-based question answering, all working together as one real system.
+
+## What It Does
+
+Users register and log in (JWT-authenticated), then ask questions in a simple interface. The frontend sends authenticated requests to the FastAPI backend, which retrieves relevant course notes and returns an LLM-generated, grounded answer - displayed along with its sources.
+
+## Architecture
+
+    React (Vite) frontend
+        |
+        | axios (with JWT Bearer token)
+        v
+    FastAPI backend (ai-study-assistant)
+        |
+        v
+    PostgreSQL + Groq LLM (RAG pipeline)
+
+## Tech Stack
+
+- **React 19** + **TypeScript** - component-based UI with full type safety
+- **Vite** - fast dev server and build tool
+- **Axios** - typed HTTP client for API calls
+
+## Running Locally
+
+Requires the [ai-study-assistant](https://github.com/abdallasaidbigpartner-web/ai-study-assistant) backend running on `http://localhost:8000` (with CORS enabled).
+
+    npm install
+    npm run dev
+
+## Notable Implementation Detail
+
+TypeScript 6+ enables `verbatimModuleSyntax` by default in new Vite scaffolds, requiring type-only imports (e.g. `FormEvent`) to be explicitly marked with `import type`. This is a real compiler distinction between *values* and *types* - getting it right avoids bundling type information into runtime JavaScript, keeping bundle size minimal.
+
+## Related Repositories
+
+- [ai-study-assistant](https://github.com/abdallasaidbigpartner-web/ai-study-assistant) - the FastAPI backend this frontend connects to
+- [python-learning-journey](https://github.com/abdallasaidbigpartner-web/python-learning-journey)
+- [typescript-learning-journey](https://github.com/abdallasaidbigpartner-web/typescript-learning-journey)
+- [sql-learning-journey](https://github.com/abdallasaidbigpartner-web/sql-learning-journey)
+- [task-manager-api](https://github.com/abdallasaidbigpartner-web/task-manager-api)
+- [ecommerce-database](https://github.com/abdallasaidbigpartner-web/ecommerce-database)
