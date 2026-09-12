@@ -42,3 +42,4 @@ TypeScript 6+ enables `verbatimModuleSyntax` by default in new Vite scaffolds, r
 - [sql-learning-journey](https://github.com/abdallasaidbigpartner-web/sql-learning-journey)
 - [task-manager-api](https://github.com/abdallasaidbigpartner-web/task-manager-api)
 - [ecommerce-database](https://github.com/abdallasaidbigpartner-web/ecommerce-database)
+- [url-shortener-go](https://github.com/abdallasaidbigpartner-web/url-shortener-go)
