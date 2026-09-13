@@ -1,6 +1,6 @@
 # AI Study Assistant - Frontend
 
-![CI](https://github.com/abdallasaidbigpartner-web/study-assistant-frontend/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/abdallasaidbigpartner-web/study-assistant-frontend/actions/workflows/ci.yml/badge.svg) ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 A React + TypeScript frontend for the [AI Study Assistant](https://github.com/abdallasaidbigpartner-web/ai-study-assistant) backend - completing the full-stack picture: React client, FastAPI backend, PostgreSQL database, JWT authentication, and RAG-based question answering, all working together as one real system.
 
