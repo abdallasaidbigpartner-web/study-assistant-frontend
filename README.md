@@ -27,10 +27,13 @@ Users register and log in (JWT-authenticated), then ask questions in a simple in
 
 ## Running Locally
 
-Requires the [ai-study-assistant](https://github.com/abdallasaidbigpartner-web/ai-study-assistant) backend running on `http://localhost:8000` (with CORS enabled).
+Requires the [ai-study-assistant](https://github.com/abdallasaidbigpartner-web/ai-study-assistant) backend running (defaults to `http://localhost:8000`, with CORS enabled).
 
+    cp .env.example .env
     npm install
     npm run dev
+
+By default the app points at `http://localhost:8000`. To point it at a different backend URL, set `VITE_API_BASE_URL` in `.env`.
 
 ## Notable Implementation Detail
 
